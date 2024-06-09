@@ -11,6 +11,7 @@ public class PrintAdjacencyList {
         }
         for(int i=0;i<edges.length;i++) {
             l.get(edges[i][0]).add(edges[i][1]);
+            l.get(edges[i][1]).add(edges[i][0]);
         }
         return l;
     }
